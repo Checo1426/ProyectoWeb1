@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital@1&family=Nunito:ital@1&family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Bitter', serif;
+    background: linear-gradient(90deg, rgb(5, 93, 148) 12%, rgb(20, 144, 157) 100%);
+}
+
+header {
+    background:transparent;
+    backdrop-filter: blur(20px);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+ul#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    height: 100px;
+}
+
+ul#navbar li {
+    height: 60%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;  
+    background: transparent;
+    backdrop-filter: blur(100px);
+}
+
+ul#navbar li:hover {
+    box-shadow: 0 -3em 3em rgba(255, 255, 255, 0.774),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.6em 3em rgba(0, 255, 255, 0.989);
+    transform: translateY(-10px);
+        
+}
+
+img#foto1 {
+    height: 80px;
+    
+}
+
+.cajas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.trajes,
+.trajesm,
+.gorras,
+.googles {
+    flex: 1 1 30rem;
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    max-width: 1000px;
+}
+
+
+.trajes img,
+.trajesm img {
+    height: 350px;
+    width: 850px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    transition: all .55s ease;
+}
+
+
+.gorras img, 
+.googles img {
+    height: 400px;
+    width: 700px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    transition: all .55s ease;
+}
+
+
+.trajes h1,
+.trajesm h1,
+.gorras h1,
+.googles h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.trajes:hover,
+.trajesm:hover,
+.gorras:hover, 
+.googles:hover {
+    filter: brightness(0.5);
+    transform: translateY(-10px);
+}
+
+.trajes h1:hover,
+.trajesm h1:hover,
+.gorras h1:hover,
+.googles h1:hover  {
+    background: white;
+    color: black;
+    padding: 12px 1px;
+    height: 20px;
+    width: 150px;
+    transition: all .55s ease;
+}
+
+
+.info {
+    border: 15px solid #ffffff;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 15px 5px #000000;
+    transform: translateY(-10px);
+    transition: all .55s ease;
+    display: flex;
+}
+
+
+.info h1 {
+    background: #ffffff;
+    text-align: center;
+    padding: 2px 1px;
+}
+
+.info img {
+    position: relative;
+    width: 25%;
+    height: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -3%);
+
+}
+
+.NombreReseña {
+    background: white;
+    border-radius: 10px;
+    padding: 15px; 
+    text-align: center;
+    box-shadow: 5px 5px 3px 5px #000000;
+    width: 100%;
+}
+
+.reseñas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    margin: 50px;
+}
+
+.reseña1,
+.reseña2,
+.reseña3 {
+    background: white;
+    border-radius: 10px;
+    padding: 15px; 
+    margin-bottom: 40px; 
+    text-align: center;
+    box-shadow: 5px 5px 3px 5px #000000;
+    width: 100%;
+}
+
+.reseña1 h2,
+.reseña2 h2,
+.reseña3 h2 {
+    font-size: 20px; 
+    margin-bottom: 10px;
+}
+
+.reseña1 p,
+.reseña2 p,
+.reseña3 p {
+    font-size: 16px; 
+    color: #555555;
+}
